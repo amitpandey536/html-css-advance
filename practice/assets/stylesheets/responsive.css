@@ -1,0 +1,153 @@
+/* body {
+    color: #fff;
+    font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  }
+  .container:before,
+  .container:after {
+    content: "";
+    display: table;
+  }
+  .container:after {
+      clear: both;
+  }
+  .container {
+    background: #cacadf;
+    width: 538px;
+    *zoom: 1;
+  }
+  .container,
+  section,
+  aside {
+    border-radius: 6px;
+  }
+  /* section,
+  aside {
+    background: #2db34a;
+    margin: 10px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  section {
+    float: left;
+    width: 340px;
+  }
+  aside {
+    float: right;
+    width: 158px;
+  } */ 
+
+
+/* Responsive */
+  body {
+    font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    background-color: cadetblue;
+  }
+
+  @media screen and (max-width:400px){
+      body{
+          background-color: coral;
+      }
+  }
+  
+
+  h1 {
+    color: #9799a7;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  .container:before,
+  .container:after {
+    content: "";
+    display: table;
+  }
+  .container:after {
+    clear: both;
+  }
+  .container {
+    background: #eaeaed;
+    margin-bottom: 24px;
+    *zoom: 1;
+  }
+  .container-75 {
+    width: 75%;
+  }
+  .container-50 {
+    margin-bottom: 0;
+    width: 50%;
+  }
+  .container,
+  section,
+  aside {
+    border-radius: 6px;
+  }
+
+
+
+ section,
+  aside {
+    background: #2db34a;
+    color: #fff;
+    margin: 1.858736059%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+/* media queries */
+
+
+  @media all and (min-width: 420px) {
+    .container{
+        max-width: 538px;
+            
+    }
+ 
+  section {
+    float: left;
+    width: 63.197026%;
+  }
+  aside {
+    float: right;
+    width: 29.3680297%;
+  }
+  }
+
+
+  /* logo */
+  .logo {
+    color: black;
+    /* border-top: 4px solid #e8f5f2; */
+    float: left;
+    font-size: 48px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    line-height: 44px;
+    /* padding: 40px 0 22px 0; */
+    text-transform: uppercase;
+  }
+
+
+  .figure-52 {
+    width: 50%;
+    height: 50%;
+  }
+
+  .figure-50 {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  iframe {
+    border: 0;
+    height: 200%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }

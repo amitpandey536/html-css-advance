@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>transform 3D</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script src='main.js'></script>
+
+    <style>
+    .base{
+        width: 350px;
+        height: 250px;
+        background: grey;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin: 100px 0 0 100px;
+    
+    }
+    #box{
+        width:350px;
+        height:250px;
+        background: rgb(211, 51, 51);
+        /* transform-origin: right center; */
+        /* transform: perspective(800px) rotateX(30deg) ; */
+        /* transform: perspective(800px) rotateY(-30deg); */
+        /* transform: perspective(800px) rotateZ(20deg); */
+        /* transform: perspective(800px) rotateY(30deg) translateZ(350px); */
+        /* transform: perspective(800px) rotateY(30deg) translate3d(300px,100px,300px  ); */
+        transform: perspective(800px) scale3d(1,1,3) rotateX(60deg);
+    }
+    
+    
+    </style>
+</head>
+<body>
+
+    <h1>css 3D transform practice</h1>
+    <div class="base">
+        <div id="box">3D transform</div>
+    </div>
+    
+</body>
+</html>
