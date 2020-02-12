@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script type="text/javascript">
+    
+    function fn1(){
+        var usr=document.getElementById("text1").value;
+        var pass=document.getElementById("text2").value;
+        if(usr===amit && pass===pandey){      //if(usr!="amit" || pass!="pandey"){
+                                             // alert("incorrect")
+        alert("correct")
+        
+    }else{
+        alert("incorrct")
+    }
+}
+    
+    
+    </script>
+</head>
+<body>
+
+    <input id="text1" placeholder="enter anything" ><br>
+    <input type="password" id="text2" placeholder="password" required ><br>
+    <button onclick="fn1()">click me </button>
+    
+</body>
+</html>
