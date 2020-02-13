@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>dom manipulation radio button input</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+    
+    <script type="text/javascript">
+
+    function fn1(){
+        var rd1 = document.getElementById("rd1");
+        var rd2 = document.getElementById("rd2");
+
+        if(rd1.checked==true){
+            alert("the channel is checked----" +rd1.value);
+        }
+        else if(rd2.checked==true){
+            alert("this channel is checked" +rd2.value);
+        }
+        else{
+            alert("no channel is selected")
+        }
+
+            }
+        
+    
+    
+    
+    
+    </script>
+
+</head>
+<body>
+
+<input type="radio" id="rd1" name="kuchbhi" value="hello">hello</input><br>
+<input type="radio" id="rd2" name="kuchbhi" value="amit">amit</input><br>
+<button id="btn1" onclick="fn1()">click me</button>
+    
+</body>
+</html>

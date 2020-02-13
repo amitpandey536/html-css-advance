@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>getElementByClass</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+    
+    <script type="text/javascript">
+    function changestyling(){
+
+    var element =document.getElementsByClassName("myPara");
+
+    for (var i=0;i<element.length;i++){
+     element[i].style.color="yellow";
+ }
+    }
+    
+    
+    
+    </script>
+</head>
+<body>
+
+<p class="myPara"> this is paragraph 1</p>
+<p > this is paragraph 2</p>
+<p class="myPara"> this is paragraph 3</p>
+<p> this is paragraph 4</p>
+<p class="myPara"> this is paragraph 5</p>
+
+
+<a class="myPara" href="#">this is anchor tag</a>
+<br>
+
+<button onclick="changestyling()">click me </button>
+</body>
+</html>

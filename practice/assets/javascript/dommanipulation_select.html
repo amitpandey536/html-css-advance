@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>dom manipulation taking inout from the select box</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+    
+    <script type="text/javascript">
+
+
+    function fn1(){
+        var select=document.getElementById("selectbox");
+        alert(select.options[select.selectedIndex].value);
+    }
+    
+    
+    
+    </script>
+
+
+
+</head>
+<body>
+    
+<select id="selectbox">
+<option value="simpe task">simple task</option>
+<option value="mkbhd">mkbhd</option>
+<option value="dragon ball super">Dragon ball super</option>
+<option value="naruto">naruto</option>
+
+</select><br>
+<button onclick="fn1()">click here</button>
+
+
+
+
+
+</body>
+</html>

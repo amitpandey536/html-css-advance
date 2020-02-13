@@ -3,17 +3,17 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>dom manipulations</title>
+    <title>mouse over and mouse out</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script type="text/javascript">
     
-    function btnclick(){
-
-//document.getElementById("demo").innerHTML="it is changed when button clicked";
-var str=document.getElementById("demo").innerHTML;
-
-        alert(str);
+    
+    function setNewimage(){
+        document.getElementById("img1").src="vegita.jpg"
+    }
+    function setOldimage(){
+        document.getElementById("img1").src="goku.jpg"
     }
     
     
@@ -21,7 +21,6 @@ var str=document.getElementById("demo").innerHTML;
     </script>
 </head>
 <body>
-    <button onclick="btnclick()">click me</button>
-    <h1 id="demo"> random text example</h1>
+    <img id="img1" src="goku.jpg" width="30%"  onmouseover="setNewimage()" onmouseout="setOldimage()">
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>dom manipulation element by tagname </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script type="text/javascript">
+    
+    function changeStyling(){
+        var para=document.getElementsByTagName("p");
+        // para[0].style.color= "red";
+        // para[1].style.fontSizeAdjust= 1 ;
+        // para[2].style.fontWeight= "bold"  ;
+        // para[3].style.fontStyle= "italic" ;
+        // para[4].style.color= "blue" ;
+
+
+        for(var i=0;i<para.length;i++){
+            para[i].style.color="blue";
+        }
+    }
+    
+    
+    
+    </script>
+</head>
+<body>
+<p> this is paragraph 1</p>
+<p> this is paragraph 2</p>
+<p> this is paragraph 3</p>
+<p> this is paragraph 4</p>
+<p> this is paragraph 5</p>
+<br>
+<button onclick="changeStyling()">click me </button>
+    </body>
+</html>
