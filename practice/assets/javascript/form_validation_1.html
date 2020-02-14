@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>form validations</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script type="text/javascript">
+    
+    function validate(){
+        var uname=document.getElementById("uname");
+        var password=document.getElementById("pass");
+
+        if(uname.value.trim()==""){
+            // alert("blank username");
+            uname.style.border="solid 3px red";
+            document.getElementById("lbluser").style.visibility="visible";
+            return false;
+        
+        }else if(password.value.trim()==""){
+            // alert("blank password");
+            return false;
+
+        }
+        else if(password.value.trim().length<5){
+            // alert("passsword to short");
+            uname.style.border="solid 3px red";
+            document.getElementById("lblpassword").style.visibility="visible";
+            
+            return false;
+        }
+
+        else{
+            return true;
+        }
+
+
+
+    }
+
+
+
+      
+    </script>
+</head>
+<body>
+<form onsubmit="return validate()" action="./event_mouseover_mouseout.html">
+
+<input id ="uname" type="text" placeholder="user name">
+<label id="lbluser" style="color: red; visibility: hidden;">Invalid</label>
+<br><br>
+<input id="pass" type="password" placeholder="password" >
+<label id="lblpassword" style="color: red; visibility: hidden;">password to short</label>
+<br>
+<br>
+<button type="submit" >submit</button>
+
+
+</form>
+    
+
+
+</body>
+</html>

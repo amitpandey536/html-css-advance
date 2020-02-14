@@ -12,8 +12,12 @@
         var username=document.getElementById("uname");
         var password=document.getElementById("pass");
 
-        if(username.value== "" || pass.vlaue==""){
-            alert("no blank values allowed")
+        if(username.value.trim()== "" || password.value.trim()==""){
+            alert("no blank values allowed");
+            return false;
+        }
+        else{
+            true;
         }
 
     }
@@ -22,14 +26,14 @@
     </script>
 </head>
 <body>
-<form action="./event_mouseover_mouseout.html">
+<form onsubmit="return validate()" action="./event_mouseover_mouseout.html">
 
-<input id ="uname" type="text" placeholder="user name">
+<input id ="uname" type="text" placeholder="user name" required>
 <br><br>
-<input id="pass" type="password" placeholder="password">
+<input id="pass" type="password" placeholder="password" required>
 <br>
 <br>
-<button type="submit" onclick="validate()">submit</button>
+<button type="submit" >submit</button>
 
 
 </form>
