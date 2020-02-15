@@ -7,14 +7,23 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
     <script type="text/javascript">
+    var ID=0;
+    var seconds=0;
     function printmsg(){
 
-        document.getElementById("op").innerHTML="hello bhai 5 sec passed";
+        document.getElementById("op").innerHTML=seconds+"seconds";
+        seconds++;
 
     }
 
     function start(){
-        
+        // ID=window.setTimeout(printmsg,5000);
+        ID=window.setInterval(printmsg,1000)
+    }
+    
+    function stop(){
+    //    window.clearTimeout(ID);
+    window.clearInterval(ID)
     }
     
     
@@ -25,7 +34,7 @@
 
     <button onclick="start()">start</button>
     <br>
-    <h2 id="op">some text</h2>
+    <h2 id="op" style="color: red;">some text</h2>
     <br>
     <button onclick="stop()">stop</button>
 

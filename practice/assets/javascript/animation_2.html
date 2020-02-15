@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta charset='utf-8'> -->
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <title>basic animation 2 in java script</title>
+    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script type="text/javascript">
+    
+    var width = 200;
+    var intervalID = 0;
+    var increaseimage = 5;
+
+    function increase(){
+        intervalID = setInterval(zoomIn,20)
+    }
+    function zoomIn(){
+        
+        if(width<200){
+            width = width+increaseimage;
+            document.getElementById("img1").style.width=width;
+            console.log(width);
+
+        }else{
+            clearInterval(intervalID);
+        }
+    
+    }
+function decrease(){
+    intervalID = setInterval(zoomOut,20)
+
+}
+function zoomOut(){
+        
+        if(width>100){
+            width = width-increaseimage;
+            document.getElementById("img1").style.width=width;
+            console.log(width);
+        }else{
+
+            clearInterval(intervalID);
+        }
+    
+    }
+
+    
+</script>
+</head>
+<body>
+    
+    <br>
+    <br>
+    <img id="img1" src="heart.png" width="100" style="margin: 7em;" onmouseover="increase()" onmouseout="decrease()">
+
+
+
+
+</body>
+</html>
